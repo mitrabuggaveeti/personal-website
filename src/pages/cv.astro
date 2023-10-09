@@ -4,8 +4,11 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 ---
 
 <BaseLayout title="Resume" sideBarActiveItemID="cv">
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Profile</div>
+  <div class="mb-5 flex justify-between items-center">
+    <div class="text-3xl font-bold">Profile</div>
+    <div class="mt-8">
+      <a class="btn btn btn-primary text-white transition ease-in-out bg-purple-900 hover:scale-[103%] hover:bg-amber-500 hover:text-white" href="https://drive.google.com/file/d/1Swdc4qK03UBmr1-31ECfG3W11L8TFrfi/view?usp=sharing" target="_blank">View Resume</a>
+    </div>
   </div>
 
   <div class="mb-10 text-justify">
@@ -21,12 +24,12 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
   <div class="time-line-container grid gap-4 mb-10">
     <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
+      title="Masters in Computer Science"
+      subtitle="2022 to 2023 at University of North Carolina at Charlotte, Charlotte, [USA]"
     />
     <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
+      title="Bachelor of Technology (Computer Science and Engineering)"
+      subtitle="2016 to 2020 at Jawaharlal Nehru Technological University, Hyderabad, [INDIA]"
     />
   </div>
 
@@ -36,22 +39,29 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
   <div class="time-line-container mb-10">
     <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+      title="Junior Software Engineer"
+      subtitle="Feb 2021 – Jul 2022 at EPAM SYSTEMS, [INDIA]"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+    • Implemented Micro Front End Architecture (MFE) with React JS leveraging various custom-built web components and
+    achieved a remarkable 30% performance boost in UI load time.
+    • Revamped UI & design aesthetics from Durandal to React with optimized rendering, and seamless state management.
+    • Developed AWS lambda functions for server-side rendering, this architectural optimization significantly reduced page load
+    times by 50% offloading rendering tasks to the server, resulting in enhanced Time to First Byte (TTFB)
+    • Engaged with the client within an Agile Scrum framework, actively involved in meetings, sprint planning, and retrospectives.
+    • Provided mentorship to jr. developers, assisting them in goal-setting, and elevating coding standards through code reviews. •
+    • Utilized CI/CD tools Jenkins to automate builds, tests, and deployments, resulting in streamlined workflows and increased developer productivity.
     </TimeLineElement>
     <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+      title="Software Developer Associate"
+      subtitle="Aug 2020 – Jan 2021 at Teleparadigm Networks, [INDIA]"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+    • Spearheaded the development of the backend architecture for a cutting-edge digital pathology product.
+    • Designed, implemented RESTful APIs for efficient communication between the frontend and backend components.
+    • Employed CherryPy and Python to craft a highly performant and extensible backend, supporting complex data handling.
+    • Managed containerization and orchestration using Docker and Kubernetes, strategically optimizing resource utilization and
+    scalability to elevate the performance and efficiency of the application.
+    • Collaborated with the operations teams to automate deployment processes using CI/CD, achieving zero-downtime releases,
+    Assisted with automated unit test coverage for the web components using jest & mocha ensuing platform stability & followed many design patterns and best practices to improve code quality and maintained code coverage.and enhancing system stability.
     </TimeLineElement>
   </div>
 
@@ -61,10 +71,16 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
   <ul class="list-disc mx-6 mb-10 grid gap-2">
     <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
+      <a href="#" target="_blank"> Introduction to Machine Learning (NPTEL IIT Madras)</a>
     </li>
     <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
+      <a href="#" target="_blank">  Full-Stack Web Development with React (COURSERA)</a>
+    </li>
+    <li>
+      <a href="#" target="_blank">  AWS Academy Data Analytics (AWS)</a>
+    </li>
+    <li>
+      <a href="#" target="_blank">  AWS Academy Cloud Foundation (AWS)</a>
     </li>
   </ul>
 
@@ -73,20 +89,22 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
   </div>
 
   <ul class="list-disc md:columns-5 columns-2 mx-6">
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
+    <li>Java</li>
+    <li>Python</li>
+    <li>JavaScript</li>
+    <li>TypeScript</li>
+    <li>AWS EC2</li>
+    <li>Lamda</li>
+    <li>Git</li>
+    <li>Jenkins</li>
+    <li>Docker</li>
+    <li>Kubernetes</li>
+    <li>React</li>
+    <li>Angular</li>
+    <li>Node JS</li>
+    <li>Express</li>
+    <li>REST Api</li>
+    <li>MySQL</li>
+    <li>MongoDB</li>
   </ul>
 </BaseLayout>
